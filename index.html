@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <title>Book StoreStore </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.6.3/css" integrity="sha384-UHRtZLI+pbxtHCWplt77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container mt-4">
+
+        <h1 class="display-4 text-center"><span class="text-primary">Book</span>Store</h1>
+
+        <form id="book-form" class="">
+            <div class="form-group">
+                <label for="title">Tittle</label>
+                <input type="text" id="title" class="form-control" placeholder="Enter Title of Book">
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="form-control" placeholder="Enter Author of Book">
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="form-control" placeholder="Enter ISBN of Book">
+            </div>
+
+
+            <div class="form-group">
+                <label for="price">PRICE</label>
+                <input type="text" id="price" class="form-control" placeholder="Enter Price of Book">
+            </div>
+
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+
+             <input type="text" id="search" class="form-control mt-3" placeholder="search book type Title...">
+      
+        </form>
+     
+
+        <table id="table" class="table table-striped mt-3">
+            <thead>
+
+                <tr>
+                    <td>Tittle</td>
+                    <td>Author</td>
+                    <td>ISBN</td>
+                    <td>PRICE</td>
+                    <td></td>
+                </tr>
+
+            </thead>
+            <tbody id="book-list"></tbody>
+
+
+        </table>
+    </div>
+
+<script src="javascript.js"></script>
+</body>
+
+</html>
